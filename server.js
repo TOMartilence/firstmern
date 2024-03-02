@@ -30,6 +30,14 @@ app.post("https://firstmern-sini.onrender.com/api/send", async (req, res) => {
     email,
     message
 })
+
+app.get("https://firstmern-sini.onrender.com/api/send",async(req,res)=>{
+  try {
+    res.send("Hello Thoma")
+  } catch (error) {
+    
+  }
+})
   try {
     await user.save()
     console.log("New User Added");
