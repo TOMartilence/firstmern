@@ -5,6 +5,9 @@ const app = express();
 const port = 5000;
 const mongoose = require("mongoose");
 const mongoURI = process.env.string;
+const cors = require('cors');
+app.use(cors());
+
 mongoose.connect(mongoURI)
     .then(() => console.log('MongoDB connected'))   
     .catch(err => console.log(err));
