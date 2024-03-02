@@ -19,7 +19,7 @@ app.use(bodyParser.json());
 
 const User = mongoose.model("User",userSchema)
 
-app.post("/api/send", async (req, res) => {
+app.post("https://firstmern-sini.onrender.com/api/send", async (req, res) => {
   const { firstname, lastname, email, message } = req.body;
   const user = new User({
     firstname,
